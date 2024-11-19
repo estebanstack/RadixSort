@@ -7,7 +7,7 @@ public class RadixSort {
     public static void radixSort(int[] array) {
         int max = obtenerMaximo(array);
 
-        // Realiza el conteo por cada posición de dígito
+        // Realiza el conteo por cada posicion de digito
         for (int exp = 1; max / exp > 0; exp *= 10) {
             creaContenedores(array, exp);
         }
